@@ -4,6 +4,8 @@ import StudentHomeView from '../views/StudentHomeView.vue'
 import AdminHomeView from '../views/AdminHomeView.vue'
 import StudentRegister from '../views/student-views/StudentRegister.vue'
 import CoursesRegister from '../views/student-views/CoursesRegister.vue'
+import RegisteredStudents from '../views/student-views/RegisteredStudents.vue'
+
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -27,6 +29,10 @@ const router = createRouter({
     {
       path: '/courses-register',
       component: CoursesRegister
+    },
+    {
+      path: '/registered-students',
+      component: RegisteredStudents
     }
   ]
 })

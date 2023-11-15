@@ -10,7 +10,7 @@
         <img class="h-[140px] w-[140px]" src="../assets/note.png" alt="note image">
     </RouterLink>
 
-    <RouterLink to="" class="transition ease-in-out md:hover:-translate-y-3 font-bold bg-white w-full h-[250px] drop-shadow-2xl gap-3 flex-col flex items-center
+    <RouterLink to="/registered-students" class="transition ease-in-out md:hover:-translate-y-3 font-bold bg-white w-full h-[250px] drop-shadow-2xl gap-3 flex-col flex items-center
     p-5">
         <h1 class="hidden md:block">REGISTERED STUDENTS</h1>
         <p class="md:hidden">Here you can see all the enrolled students</p>
