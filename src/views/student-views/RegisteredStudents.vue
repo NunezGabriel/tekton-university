@@ -56,7 +56,7 @@
             </div>
         </div>
 
-        <RouterLink class="mx-auto w-full max-w-[500px] " to="/">
+        <RouterLink class="w-full flex justify-center" to="/">
             <button class="font-normal rounded-xl w-full max-w-[500px] h-[45px] px-4 bg-[#034752] text-[#e6edee] mb-10">
                 Go Home
             </button>

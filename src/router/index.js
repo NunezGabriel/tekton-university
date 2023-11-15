@@ -5,6 +5,10 @@ import AdminHomeView from '../views/AdminHomeView.vue'
 import StudentRegister from '../views/student-views/StudentRegister.vue'
 import CoursesRegister from '../views/student-views/CoursesRegister.vue'
 import RegisteredStudents from '../views/student-views/RegisteredStudents.vue'
+import ProfessorManagment from '../views/admin-views/ProfessorManagment.vue'
+import EditProfessor from '../views/admin-views/EditProfessor.vue'
+import CourseManagment from '../views/admin-views/CourseManagment.vue'
+import EditCourse from '../views/admin-views/EditCourse.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -33,6 +37,22 @@ const router = createRouter({
     {
       path: '/registered-students',
       component: RegisteredStudents
+    },
+    {
+      path: '/professors-managment',
+      component: ProfessorManagment
+    },
+    {
+      path: '/edit-professors',
+      component: EditProfessor
+    },
+    {
+      path: '/courses-managment',
+      component: CourseManagment
+    },
+    {
+      path: '/edit-courses',
+      component: EditCourse
     }
   ]
 })
