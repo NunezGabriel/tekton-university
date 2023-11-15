@@ -27,7 +27,7 @@
             </div>
         </div>
        <RouterLink to="/courses-managment" class="w-full max-w-[200px]">
-        <button class="w-full max-w-[200px] font-normal rounded-xl h-[35px] px-4 bg-[#034752] text-[#e6edee]">
+        <button class="transition ease-in duration-100 md:hover:bg-[#66e7da] w-full max-w-[200px] font-normal rounded-xl h-[35px] px-4 bg-[#034752] text-[#e6edee]">
             Done
         </button>
        </RouterLink>

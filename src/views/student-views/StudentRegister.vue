@@ -20,11 +20,10 @@
             <h1 class="font-normal">Enter your DNI</h1>
              <input type="number" class="w-full border border-[#034752] outline-none rounded-xl h-[35px] px-4 font-light mb-5">
         </div>
-        <button class="font-normal rounded-xl h-[35px] px-4 bg-[#034752] text-[#e6edee]">
-            Continue
-        </button>
         <RouterLink to="/courses-register">
-            cambio de pag :D           
+            <button class="transition ease-in duration-100 md:hover:bg-[#66e7da] font-normal rounded-xl h-[35px] px-4 bg-[#034752] text-[#e6edee]">
+                Continue
+            </button>
         </RouterLink>
     </div>
     </section>
