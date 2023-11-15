@@ -10,5 +10,5 @@
         <h1 class="">COURSE MANAGEMENT</h1>
         <img class="h-[140px] w-[140px]" src="../assets/courses.png" alt="books image">
     </div>
-</section>
+    </section>
 </template>

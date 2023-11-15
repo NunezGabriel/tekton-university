@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    <h1 class="text-center md:mt-[130px] md:mb-[80px] mb-10 mt-10 text-2xl md:text-[50px]">Welcome! Please identify yourself</h1>
+    <h1 class="font-light text-center md:mt-[130px] md:mb-[80px] mb-10 mt-10 text-2xl md:text-[50px]">Please identify yourself</h1>
 
     <section class="w-[300px] md:w-[800px] md:flex-row mx-auto flex flex-col gap-8 mb-10">
         
