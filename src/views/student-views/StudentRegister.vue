@@ -26,6 +26,9 @@
     };
 </script>
 
+
+
+
 <template>
     <section class="w-[300px] md:w-[800px] md:flex-row md:mt-[100px] mx-auto mt-10">
     <h1 class="font-light leading-normal text-center md:mt-[100px] md:mb-[80px] mb-10 mt-10 text-2xl md:text-[50px]">Enter your information to continue with registration</h1>

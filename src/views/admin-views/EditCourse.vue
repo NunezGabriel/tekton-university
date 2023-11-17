@@ -1,6 +1,24 @@
 <script setup>
     import { RouterLink } from 'vue-router';
+    import { courses } from '../../data';
 </script>
+
+<script>
+    export default {
+    data() {
+        const id = this.$route.params.id;
+        
+        const course = courses.filter((course)=> course.code == id)
+
+        console.log(course);
+        return {
+        id,
+        course: course[0]
+        };
+    }
+    };
+</script>
+
 
 <template>
     <section class="w-[300px] md:w-[800px] md:flex-row md:mt-[100px] mx-auto mt-10">
@@ -9,21 +27,21 @@
         <div class="">
             <div>
             <h1 class="font-normal">Code</h1>
-             <input type="text" class="w-full max-w-[200px] border border-[#034752] outline-none rounded-xl h-[35px] px-4 font-light mb-5">
+             <input type="text" :value=course.code class="w-full max-w-[200px] border border-[#034752] outline-none rounded-xl h-[35px] px-4 font-light mb-5">
             </div>
             <div>
                 <h1 class="font-normal">Name</h1>
-                <input type="text" class="w-full max-w-[200px] border border-[#034752] outline-none rounded-xl h-[35px] px-4 font-light mb-5">
+                <input type="text" :value=course.name class="w-full max-w-[200px] border border-[#034752] outline-none rounded-xl h-[35px] px-4 font-light mb-5">
             </div>
         </div>
         <div>
             <div>
-            <h1 class="font-normal">Description</h1>
-             <input type="text" class="w-full max-w-[200px] border border-[#034752] outline-none rounded-xl h-[35px] px-4 font-light mb-5">
+            <h1 class="font-normal">Summary</h1>
+             <input type="text" :value=course.summary class="w-full max-w-[200px] border border-[#034752] outline-none rounded-xl h-[35px] px-4 font-light mb-5">
             </div>
             <div>
                 <h1 class="font-normal">Professor</h1>
-                <input type="text" class="w-full max-w-[200px] border border-[#034752] outline-none rounded-xl h-[35px] px-4 font-light mb-5">
+                <input type="text" :value=course.professor class="w-full max-w-[200px] border border-[#034752] outline-none rounded-xl h-[35px] px-4 font-light mb-5">
             </div>
         </div>
        <RouterLink to="/courses-managment" class="w-full max-w-[200px]">

@@ -51,7 +51,7 @@ const router = createRouter({
       component: CourseManagment
     },
     {
-      path: '/edit-courses',
+      path: '/edit-courses/:id',
       component: EditCourse
     }
   ]

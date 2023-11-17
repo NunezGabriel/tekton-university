@@ -7,7 +7,7 @@
 export default {
   data() {
     const id = this.$route.params.id;
-    
+
     const professor = professors.filter((professor)=> professor.dni == id)
 
     console.log(professor);
@@ -26,7 +26,7 @@ export default {
         <div class="">
             <div>
             <h1 class="font-normal">DNI</h1>
-             <input type="text" :value=id class="w-full max-w-[200px] border border-[#034752] outline-none rounded-xl h-[35px] px-4 font-light mb-5">
+             <input type="text" :value=professor.dni class="w-full max-w-[200px] border border-[#034752] outline-none rounded-xl h-[35px] px-4 font-light mb-5">
             </div>
             <div>
                 <h1 class="font-normal">Name</h1>

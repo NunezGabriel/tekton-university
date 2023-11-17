@@ -21,7 +21,7 @@
                 </div>
             </div>
 
-            <RouterLink class="" to="/edit-courses">
+            <RouterLink class="" :to="/edit-courses/ + course.code">
                 <button class=" transition ease-in duration-100 md:hover:bg-[#66e7da] font-normal rounded-xl w-[180px]  h-[45px] px-4 bg-[#034752] text-[#e6edee] ">
                     Edit
                 </button>
