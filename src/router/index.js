@@ -43,7 +43,7 @@ const router = createRouter({
       component: ProfessorManagment
     },
     {
-      path: '/edit-professors',
+      path: '/edit-professors/:id',
       component: EditProfessor
     },
     {

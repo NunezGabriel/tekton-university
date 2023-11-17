@@ -38,7 +38,7 @@ export const professors = [
     lastname: 'Sanchez',
     birthdate: '03/07/1958',
     age: 65,
-    profession: 'pueblo paleta'
+    profession: 'Scientist'
   },
   {
     dni: 846957284,
@@ -46,7 +46,7 @@ export const professors = [
     lastname: 'Ridley',
     birthdate: '19/02/1995',
     age: 28,
-    profession: 'pueblo paleta'
+    profession: 'Engineer'
   },
   {
     dni: 72393568,
@@ -59,7 +59,7 @@ export const professors = [
   {
     dni: 71393568,
     name: 'Todd',
-    lastname: 'francella',
+    lastname: 'Francella',
     birthdate: '01/01/2000',
     age: 23,
     profession: 'pueblo paleta'

@@ -1,10 +1,34 @@
-<script setup>
-    import { RouterLink } from 'vue-router';
-    import { students, courses } from '../../data';
 
-    const {dni, name, lastname, birthdate, age, address} = students[students.length-1]
+<script setup>
+import { RouterLink } from 'vue-router';
+import { students, courses } from '../../data';
+
+const { dni, name, lastname, birthdate, age, address } = students[students.length - 1];
+
+// const selectedValues = [];
 
 </script>
+
+<script>
+export default {
+  data() {
+    return {
+      selectedValues : [],
+    };
+  },
+
+  methods: {
+    toggleButton(course) {
+        if(this.selectedValues.includes(course)) {
+            this.selectedValues = this.selectedValues.filter(courseInArray => courseInArray !== course)
+        } else {
+            this.selectedValues.push(course)
+        }
+    }
+  },
+};
+</script>
+
 
 <template>
     <section class="w-[300px] lg:w-[1000px] md:w-[800px] md:flex-row md:mt-[100px] mx-auto mt-10">
@@ -24,7 +48,7 @@
         <div class="font-bold  bg-white w-full  drop-shadow-2xl gap-7 flex-col flex md:py-6 md:px-12 p-4 mt-10 mb-16">
             <h1 class="font-medium">Choose the courses you want to enroll in</h1>
 
-            <div class="flex flex-col gap-4 md:gap-10 "> <!--doinde se reenderean los cursos--> 
+            <div class="flex flex-col gap-4 md:gap-8 "> <!--doinde se reenderean los cursos--> 
 
                 <div v-for="course in courses" class="md:h-14 h-12 w-full border border-black rounded-xl md:p-4 p-2 flex gap-2 items-center justify-between">
                     <div class="flex gap-6 ">
@@ -32,11 +56,16 @@
                         <h1 class="hidden font-normal md:flex gap-1">Professor in charge: <p class="font-light">{{ course.professor }}</p></h1>
                         <h1 class="font-normal md:hidden">{{ course.name }}</h1>
                     </div>
-                    <button class="transition ease-in duration-100 md:hover:bg-[#66e7da] font-normal rounded-xl h-[35px] px-4 bg-[#034752] text-[#e6edee]">
-                        Select
+                    <button :key="course.name" @click="toggleButton(course.name)" class="transition ease-in duration-100 bg-[#034752] md:hover:bg-[#3e7982]  font-normal rounded-xl h-[35px] px-4 text-[#e6edee]">
+                        {{ selectedValues.includes(course.name) ? 'Cancel' : 'Select'}}
                      </button>
                 </div>  
-
+                <p>Selected Courses: <br><span class="font-normal">{{ selectedValues.length > 0 ? null : 'Not courses selected' }}</span></p>
+                <div class="w-full flex flex-wrap gap-4">
+                    <div v-for="course in selectedValues" class="text-md px-3 py-1 font-normal text-white bg-[#034752] w-fit rounded-md">
+                        {{ course }}
+                    </div>
+                </div>
             </div>
 
             <RouterLink class="mx-auto w-full max-w-[500px]" to="/registered-students">

@@ -12,19 +12,19 @@
                 <img class="h-[150px] w-[150px]" src="../../assets/avatar.png" alt="admin image">
                 <div class="md:flex items-center gap-10">
                     <div>
-                        <h1 class="font-normal ">{{ professor.dni }} </h1>
-                        <h1 class="font-normal ">{{ professor.name }} </h1>
-                        <h1 class="font-normal ">{{ professor.lastname }}</h1>
+                        <h4 class="font-normal ">{{ professor.dni}} </h4>
+                        <h4 class="font-normal ">{{ professor.name }} </h4>
+                        <h4 class="font-normal ">{{ professor.lastname }}</h4>
                     </div>
                     <div>
-                        <h1 class="font-normal ">{{ professor.birthdate }}</h1>
-                        <h1 class="font-normal ">{{ professor.age }} </h1>
-                        <h1 class="font-normal ">{{ professor.profession }} </h1>                     
+                        <h4 class="font-normal ">{{ professor.birthdate }}</h4>
+                        <h4 class="font-normal ">{{ professor.age }} </h4>
+                        <h4 class="font-normal ">{{ professor.profession }} </h4>                     
                     </div>
                 </div>
             </div>
 
-            <RouterLink class="" to="/edit-professors">
+            <RouterLink class="" :to="/edit-professors/ + professor.dni">
                 <button class="transition ease-in duration-100 md:hover:bg-[#66e7da] font-normal rounded-xl w-[180px]  h-[45px] px-4 bg-[#034752] text-[#e6edee] ">
                     Edit
                 </button>

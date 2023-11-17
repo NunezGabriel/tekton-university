@@ -1,5 +1,22 @@
 <script setup>
     import { RouterLink } from 'vue-router';
+    import { professors } from '../../data';
+</script>
+
+<script>
+export default {
+  data() {
+    const id = this.$route.params.id;
+    
+    const professor = professors.filter((professor)=> professor.dni == id)
+
+    console.log(professor);
+    return {
+      id,
+      professor: professor[0]
+    };
+  }
+};
 </script>
 
 <template>
@@ -9,29 +26,29 @@
         <div class="">
             <div>
             <h1 class="font-normal">DNI</h1>
-             <input type="text" class="w-full max-w-[200px] border border-[#034752] outline-none rounded-xl h-[35px] px-4 font-light mb-5">
+             <input type="text" :value=id class="w-full max-w-[200px] border border-[#034752] outline-none rounded-xl h-[35px] px-4 font-light mb-5">
             </div>
             <div>
                 <h1 class="font-normal">Name</h1>
-                <input type="text" class="w-full max-w-[200px] border border-[#034752] outline-none rounded-xl h-[35px] px-4 font-light mb-5">
+                <input type="text" :value=professor.name class="w-full max-w-[200px] border border-[#034752] outline-none rounded-xl h-[35px] px-4 font-light mb-5">
             </div>
             <div>
                 <h1 class="font-normal">Lastname</h1>
-                <input type="text" class="w-full max-w-[200px] border border-[#034752] outline-none rounded-xl h-[35px] px-4 font-light mb-5">
+                <input type="text" :value=professor.lastname class="w-full max-w-[200px] border border-[#034752] outline-none rounded-xl h-[35px] px-4 font-light mb-5">
             </div>
         </div>
         <div>
             <div>
             <h1 class="font-normal">Birthday</h1>
-             <input type="text" class="w-full max-w-[200px] border border-[#034752] outline-none rounded-xl h-[35px] px-4 font-light mb-5">
+             <input type="text" :value=professor.birthdate class="w-full max-w-[200px] border border-[#034752] outline-none rounded-xl h-[35px] px-4 font-light mb-5">
             </div>
             <div>
                 <h1 class="font-normal">Age</h1>
-                <input type="text" class="w-full max-w-[200px] border border-[#034752] outline-none rounded-xl h-[35px] px-4 font-light mb-5">
+                <input type="text" :value=professor.age class="w-full max-w-[200px] border border-[#034752] outline-none rounded-xl h-[35px] px-4 font-light mb-5">
             </div>
             <div>
                 <h1 class="font-normal">Profession</h1>
-                <input type="text" class="w-full max-w-[200px] border border-[#034752] outline-none rounded-xl h-[35px] px-4 font-light mb-5">
+                <input type="text" :value=professor.profession class="w-full max-w-[200px] border border-[#034752] outline-none rounded-xl h-[35px] px-4 font-light mb-5">
             </div>
         </div>
        <RouterLink to="/professors-managment" class="w-full max-w-[200px]">
