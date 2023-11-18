@@ -1,7 +1,7 @@
 <script setup>
     import { RouterLink } from 'vue-router';
     import { professors } from '../../data';
-</script>
+</script> 
 
 <script>
 export default {

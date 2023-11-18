@@ -13,21 +13,57 @@ export const students = [
 export const courses = [
   {
     code: 11111,
-    name: 'Math',
-    summary: 'nice course',
+    name: 'Programming Math',
+    summary: 'In this course, you will cover all mathematical topics related to programming',
     professor: 'Ridley'
   },
   {
     code: 22222,
-    name: 'Scince',
-    summary: 'nice course',
+    name: 'Introduccion to Data Scince',
+    summary: 'In this course, you will cover all the fundamentals of data science',
     professor: 'Sanchez'
   },
   {
     code: 3333,
-    name: 'History',
-    summary: 'nice course',
+    name: 'History of Computer Scince',
+    summary: 'In this course, you will explore the fundamentals and history of computer science',
     professor: 'Magliary'
+  },
+  {
+    code: 4444,
+    name: 'Operating Systems',
+    summary: 'An in-depth study of operating systems, covering topics such as processes',
+    professor: 'Francella'
+  },
+  {
+    code: 5555,
+    name: 'Abstraction and Design in Computation',
+    summary: 'abstraction and design in computation, emphasizing functional programming',
+    professor: 'Oxford'
+  },
+  {
+    code: 6666,
+    name: 'Systems Development',
+    summary: 'A course focused on developing computational systems for scientific applications',
+    professor: 'Vito'
+  },
+  {
+    code: 7777,
+    name: 'Data Structures and Algorithms',
+    summary: 'This course focuses on advanced data structures and algorithms',
+    professor: 'Sanchez'
+  },
+  {
+    code: 8888,
+    name: 'Machine Learning',
+    summary: 'A course that explores the principles and applications of machine learning',
+    professor: 'Raidley'
+  },
+  {
+    code: 9999,
+    name: 'Computer Systems',
+    summary: 'This course focuses on computer systems and software construction',
+    professor: 'Oxford'
   }
 ]
 
