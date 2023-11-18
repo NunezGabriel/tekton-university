@@ -1,11 +1,41 @@
+    <script setup>
+        import { faker } from '@faker-js/faker'
+    </script>
 <script >
     import CoursesRegister from './CoursesRegister.vue';
     import { RouterLink } from 'vue-router';
     import { students } from '../../data';
     export default {
         data() {
+            const name = faker.person.firstName();
+            
+            const lastname = faker.person.lastName();
+
+            const birthdateFaker = new Date(faker.date.birthdate());
+            const year = birthdateFaker.getFullYear();
+            const month = birthdateFaker.getMonth() + 1;
+            const day = birthdateFaker.getDate();
+            const formattedDate = `${day < 10 ? '0' : ''}${day}/${month < 10 ? '0' : ''}${month}/${year}`;
+
+            const currentDate = new Date();
+            const currentYear = currentDate.getFullYear();
+            const age = currentYear - year;
+
+            const address = faker.location.streetAddress({ useFullAddress: true })
+
+            console.log(name, lastname);
+            console.log(formattedDate);
+            console.log(age);
+            console.log(address);
+
             return {
             dni: "",
+            name,
+            lastname,
+            birthdate: formattedDate,
+            age,
+            address,
+            // coursesEnrolled: selectedValues
             };
         },
         methods:{
@@ -13,11 +43,11 @@
                 console.log(students);
                 students.push({
                     dni: this.dni,
-                    name: 'joao',
-                    lastname: 'cancelo',
-                    birthdate: '23/05/2004',
-                    age: 19,
-                    address: 'pueblo paleta',
+                    name: this.name,
+                    lastname: this.lastname,
+                    birthdate: this.birthdate,
+                    age: this.age,
+                    address: this.address,
                     courses: []
                 })
                 console.log(students);

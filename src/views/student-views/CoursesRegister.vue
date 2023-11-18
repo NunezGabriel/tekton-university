@@ -5,8 +5,6 @@ import { students, courses } from '../../data';
 
 const { dni, name, lastname, birthdate, age, address } = students[students.length - 1];
 
-// const selectedValues = [];
-
 </script>
 
 <script>
@@ -24,6 +22,10 @@ export default {
         } else {
             this.selectedValues.push(course)
         }
+    },
+
+    addCourses() {
+        students[students.length - 1].courses = this.selectedValues;
     }
   },
 };
@@ -69,7 +71,7 @@ export default {
             </div>
 
             <RouterLink class="mx-auto w-full max-w-[500px]" to="/registered-students">
-                <button class="transition ease-in duration-100 md:hover:bg-[#66e7da] font-normal rounded-xl w-full max-w-[500px] h-[45px] px-4 bg-[#034752] text-[#e6edee]">
+                <button @click="addCourses" class="transition ease-in duration-100 md:hover:bg-[#66e7da] font-normal rounded-xl w-full max-w-[500px] h-[45px] px-4 bg-[#034752] text-[#e6edee]">
                     REGISTER
                 </button>
             </RouterLink>

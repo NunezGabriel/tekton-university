@@ -1,7 +1,6 @@
 <script setup>
     import { RouterLink } from 'vue-router';
     import { courses } from '../../data';
-    import { professors } from '../../data';
 </script>
 
 <script>
@@ -20,7 +19,6 @@
         summary: course[0].summary,
         professor: course[0].professor
         };
-
 
     },
     methods: {

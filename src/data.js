@@ -6,7 +6,7 @@ export const students = [
     birthdate: '23/05/2004',
     age: 19,
     address: 'pueblo paleta',
-    courses: []
+    courses: ['Machine Learning', 'Computer Systems']
   }
 ]
 
