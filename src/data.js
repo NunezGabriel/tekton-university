@@ -15,19 +15,19 @@ export const courses = [
     code: 11111,
     name: 'Math',
     summary: 'nice course',
-    professor: 'Mr. Sanchez'
+    professor: 'Ridley'
   },
   {
     code: 22222,
     name: 'Scince',
     summary: 'nice course',
-    professor: 'Mr. Sanchez'
+    professor: 'Sanchez'
   },
   {
     code: 3333,
     name: 'History',
     summary: 'nice course',
-    professor: 'Rick Sanchez'
+    professor: 'Magliary'
   }
 ]
 

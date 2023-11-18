@@ -45,7 +45,7 @@
         </div>
         <div>
             <h1 class="font-normal">Enter your DNI</h1>
-             <input v-model="dni" type="number" class="w-full border border-[#034752] outline-none rounded-xl h-[35px] px-4 font-light mb-5">
+             <input v-model=dni type="number" class="w-full border border-[#034752] outline-none rounded-xl h-[35px] px-4 font-light mb-5">
         </div>
         <RouterLink to="/courses-register">
             <button v-on:click="addStudent" class="transition ease-in duration-100 md:hover:bg-[#66e7da] font-normal rounded-xl h-[35px] px-4 bg-[#034752] text-[#e6edee]">
