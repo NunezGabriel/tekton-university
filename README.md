@@ -1,35 +1,35 @@
-# .
+# Project Vue.js 3 Tekton University 📖🟢
 
-This template should help get you started developing with Vue 3 in Vite.
+This project is a web application developed in Vue.js 3 that uses Vue Router for navigation, Faker.js for dummy data generation, and LineIcons for icons.
 
-## Recommended IDE Setup
+## Requirements
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+- Node.js: Make sure you have Node.js installed on your system. You can download it [here](https://nodejs.org/).
 
-## Customize configuration
+## Instalation
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+1. Clone this repository to your local machine:
 
-## Project Setup
+   ```bash
+   git clone https://github.com/NunezGabriel/tekton-university.git
+   ```
 
-```sh
-npm install
-```
+2. Navigate to the project directory:
 
-### Compile and Hot-Reload for Development
+   ```bash
+   cd tekton-university
+   ```
 
-```sh
+3. Install the dependencies:
+
+   ```bash
+   npm install
+   ```
+
+## Execution
+
+Once you have installed the dependencies, you can run the application locally. Use the following command:
+
+```bash
 npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
 ```
