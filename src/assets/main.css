@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.bg-clases {
+  background-image: url(https://t3.ftcdn.net/jpg/04/22/29/88/360_F_422298859_5WpaIvDfrDdc16ai8a3MppO1PYhDmhZi.jpghttps://storage.needpix.com/rsynced_images/green-background-1480062887P1D.jpghttps://t3.ftcdn.net/jpg/04/22/29/88/360_F_422298859_5WpaIvDfrDdc16ai8a3MppO1PYhDmhZi.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
