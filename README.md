@@ -1,5 +1,7 @@
 # Project Vue.js 3 Tekton University 📖🟢
 
+➡️ You can try the project [here](https://tekton-university.vercel.app)
+
 This project is a web application developed in Vue.js 3 that uses Vue Router for navigation, Faker.js for dummy data generation, and LineIcons for icons.
 
 ## Requirements
